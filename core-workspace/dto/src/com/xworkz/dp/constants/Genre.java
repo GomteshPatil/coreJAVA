@@ -1,0 +1,6 @@
+package com.xworkz.dp.constants;
+
+public enum Genre {
+	HORROR,THRILLER,BIOGRAPHY,ACTION,SCIFI,DRAMA,CREAME,HEISTS,ANIME, HEASTRY,TIME_TRAVEL;
+
+}
