@@ -16,6 +16,7 @@ public class HospitalScammer {
 		
 		Hospital hospital=new Hospital("Jaydeva", "BTM 1st Stage", admitRule1, dischargeRule1);
 		hospital.admitPatient();
+		hospital.dischargePatient();
 
 	}
 
