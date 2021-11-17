@@ -12,10 +12,10 @@ public class IndianCitizenScamer {
 
 		Object object = new IndianCitizen();
 		System.out.println(object.toString());
-
-		if (object instanceof IndianCitizen) {
+		
+			if (object instanceof IndianCitizen) {
 			IndianCitizen casted = (IndianCitizen) object;
-
+			
 //			casted.setName("Rajesh");
 //			casted.setAdress();
 
@@ -26,6 +26,8 @@ public class IndianCitizenScamer {
 			System.out.println(casted.licenseNo());
 
 			System.out.println(casted.validAge('F', 26));// method from interface MarrageRule
+			
+			
 
 		}
 		IndianCitizen indCitizen = new IndianCitizen();
