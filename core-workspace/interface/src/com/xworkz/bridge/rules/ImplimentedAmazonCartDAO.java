@@ -13,7 +13,9 @@ public class ImplimentedAmazonCartDAO implements AmazonCartDAO {
 			for (int text = 0; text < dtos.length; text++) {
 				this.dtos[text] = cartDTO;
 				text++;
+
 				return true;
+				
 			}
 		} else {
 			System.err.println("may be array index is full or you passing null");
@@ -46,11 +48,12 @@ public class ImplimentedAmazonCartDAO implements AmazonCartDAO {
 
 		for (int k = 0; k < dtos.length; k++) {
 			if (dtos[k] != null) {
+
 				System.out.println("item name : " + dtos[k].getName());
 				System.out.println("item quantity : " + dtos[k].getQuantity());
 				System.out.println("Total items : " + dtos[k].getTotalItems());
 			} else {
-				System.err.println("There is nothing in your cart to display");
+				System.err.println("this index is empty : ".concat(String.valueOf(k)));
 
 			}
 
