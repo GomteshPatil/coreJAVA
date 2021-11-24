@@ -2,10 +2,12 @@ package com.xworkz.bridge.constants;
 
 public class CartDTO {
 
+
 	private String name;
 	private int quantity;
 	private float price;
 	private int totalItems;
+	
 
 	public CartDTO() {
 		System.out.println("Invoked no-arg const of CartDTO");

@@ -15,7 +15,7 @@ public class ImplimentedAmazonCartDAO implements AmazonCartDAO {
 				text++;
 
 				return true;
-				
+
 			}
 		} else {
 			System.err.println("may be array index is full or you passing null");

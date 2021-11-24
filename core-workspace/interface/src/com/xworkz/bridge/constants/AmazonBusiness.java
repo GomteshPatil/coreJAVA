@@ -3,7 +3,7 @@ package com.xworkz.bridge.constants;
 import com.xworkz.bridge.rules.AmazonCartDAO;
 
 public class AmazonBusiness {
-	AmazonCartDAO cartDAO;
+	
 
 	AmazonCartDAO dao;
 
