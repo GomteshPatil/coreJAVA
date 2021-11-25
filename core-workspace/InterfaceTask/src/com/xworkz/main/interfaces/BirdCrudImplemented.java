@@ -10,10 +10,10 @@ public class BirdCrudImplemented implements BirdCurd {
 	public boolean save(BirdDTO dto) {
 		System.out.println("Invoked save method");
 		if (dto != null) {
-			for (int i = 0; i < bird.length; i++) {
-				this.bird[this.counter++] = dto;
-				return true;
-			}
+
+			this.bird[this.counter++] = dto;
+			return true;
+
 		} else {
 			System.err.println("May be you passing null or the array is full");
 		}
@@ -22,7 +22,7 @@ public class BirdCrudImplemented implements BirdCurd {
 
 	@Override
 	public Integer findByAge(Integer ageToCheck) {
-		if (ageToCheck == 0) {
+		if (ageToCheck != 0) {
 			for (int j = 0; j < bird.length; j++) {
 				if (bird[j] != null) {
 					int checkWith = bird[j].getAge();
@@ -50,6 +50,7 @@ public class BirdCrudImplemented implements BirdCurd {
 				System.out.println("Bird Breed : ".concat(bird[k].getBreed()));
 				System.out.println("Bird age : ".concat(String.valueOf(bird[k].getAge())));
 				System.out.println("Bird orign : ".concat(bird[k].getOrigin()));
+				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 			}
 		}
 

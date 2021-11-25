@@ -12,7 +12,7 @@ public class BirdDTO {
 	}
 
 	public BirdDTO(String id, String breed, int age, String origin, boolean canFly) {
-		super();
+		
 		this.id = id;
 		this.breed = breed;
 		this.age = age;

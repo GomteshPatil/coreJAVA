@@ -14,17 +14,17 @@ public class BirdAbstracted {
 		if (bird != null) {
 			System.out.println("Invoked save method from abstract");
 			this.dao.save(bird);
-		} else {
-			System.err.println("pass bird dto please");
-		}
+		} /*
+			 * else { System.err.println("pass bird dto please"); }
+			 */
 	}
 
 	public void findByAge(Integer age) {
-		if (age == 0) {
-			System.out.println("Invoked find by age");
-			dao.findByAge(age);
-		} else {
-		}
+		dao.findByAge(age);
 
+	}
+	
+	public void display() {
+		dao.displayDetails();
 	}
 }
